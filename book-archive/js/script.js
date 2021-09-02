@@ -17,7 +17,7 @@ const displayBooks = (books) => {
   const count = document.getElementById('count');
   count.innerText = books.length;
   books.forEach((book) => {
-    console.log(book);
+    // console.log(book);
     const div = document.createElement('div');
     div.classList.add('div');
     div.innerHTML = `
