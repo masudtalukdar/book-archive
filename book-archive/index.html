@@ -13,8 +13,18 @@
       crossorigin="anonymous"
     />
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background: url(images/bg-image.jpg);
+        background-size: cover;
+        color: rgba(0, 0, 0, 0.863);
+        height: 100vh;
+        padding: 20px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+      }
+    </style>
   </head>
   <body>
     <h1 class="text-center text-warning">Book-archive</h1>
@@ -43,12 +53,15 @@
       </div>
     </section>
 
-   
-    <!-- book search result -->
-     <div class='text-black text-center'>result found: <span class="text-black" id="count"></span></div>
+    <!-- book search result number -->
+    <div id="countText" class="text-white">
+      result found: <span class="text-white" id="count"></span>
     </div>
-    <div id="search-result" class="row row-cols-lg-6 row-cols-md-3 g-4 ">
-     
+    <!-- book search result -->
+    <div
+      id="search-result"
+      class="row row-cols-lg-5 row-cols-md-3 p-5 g-4"
+    ></div>
 
     <!-- bootstrap js -->
     <script
