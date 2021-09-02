@@ -2,7 +2,7 @@
 const bookArchive = (text) => {
   const books = document.getElementById('search-field').value;
 
-  const url = `http://openlibrary.org/search.json?q=${text}`;
+  const url = `https://openlibrary.org/search.json?q=${text}`;
 
   // fetching url
   fetch(url)
